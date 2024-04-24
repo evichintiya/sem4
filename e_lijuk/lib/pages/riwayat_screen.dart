@@ -185,7 +185,7 @@ class DetailRiwayat extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(250),
+          preferredSize: Size.fromHeight(100),
           child: AppBar(
             leading: Align(
               alignment: Alignment.topLeft,
@@ -239,14 +239,15 @@ class DetailRiwayat extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Gambar
-              Image.asset(
-                'assets/img/paket.png',
-                height: 180,
+              Container(
+                height: 350, // Ubah tinggi kotak gambar sesuai kebutuhan
                 width: double.infinity,
-                fit: BoxFit.cover,
+                child: Image.asset(
+                  'assets/img/paket.png',
+                  fit: BoxFit.cover, // Menyesuaikan gambar ke dalam kotak
+                ),
               ),
               SizedBox(height: 20), // Spasi antara gambar dan teks
-
               // Informasi pemesanan
               Text(
                 'Nama Pemesan: ${riwayat.namaPemesan}',

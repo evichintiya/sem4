@@ -113,7 +113,7 @@ class BerandaPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset(
-            'assets/img/tamandlh.jpg',
+            'assets/img/taman.png',
             height: 180,
             width: double.infinity,
             fit: BoxFit.cover,

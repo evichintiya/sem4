@@ -1,4 +1,5 @@
 
+import 'package:e_lijuk/pages/beranda_screen.dart';
 import 'package:e_lijuk/pages/login.dart';
 import 'package:e_lijuk/pages/notifikasi_screen.dart';
 import 'package:e_lijuk/pages/profile_screen.dart';
@@ -51,7 +52,7 @@ class _TestPageState extends State<TestPage> {
   
     List<Widget> _buildScreens() {
         return [
-          // LoginScreen(),
+          BerandaPage(),
           RiwayatPemesanan(),
           Profile()
         ];
@@ -59,6 +60,12 @@ class _TestPageState extends State<TestPage> {
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
         return [
+          PersistentBottomNavBarItem(
+                icon: Icon(Icons.home),
+                title: ("Beranda"),
+                activeColorPrimary: Colors.black,
+                inactiveColorPrimary: Colors.black,
+            ),
             PersistentBottomNavBarItem(
                 icon: Icon(Icons.history),
                 title: ("Riwayat"),
